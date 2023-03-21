@@ -15,7 +15,7 @@ int main(void)
 	{
 		c = a + b;
 		printf("%d", c);
-		
+
 		if (i != 98)
 		{
 			printf(", ");
