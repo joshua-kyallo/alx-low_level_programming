@@ -25,6 +25,6 @@ int main(void)
 		b = c;
 	}
 
-	printf('\n');
+	printf("\n");
 	return (0);
 }
