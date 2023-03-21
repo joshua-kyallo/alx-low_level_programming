@@ -11,7 +11,7 @@ int main(void)
 	int b = 2;
 	int i, c;
 
-	for (i = 3; i <= 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		c = a + b;
 		printf("%d", c);
