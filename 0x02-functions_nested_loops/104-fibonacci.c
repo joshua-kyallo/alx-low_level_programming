@@ -6,20 +6,20 @@
  * Return: 0 when successfull
  */
 
-int main(void)
-{
-	int a = 1;
-	int b = 1;
-	int c, i;
+int main() {
+    int a = 1, b = 2, c, count = 2;
+    printf("%d, %d, ", a, b);
 
-	printf("%d, %d, ", a, b);
+    while (count < 98) {
+        c = a + b;
+        printf("%d, ", c);
+        a = b;
+        b = c;
+        count++;
+    }
 
-	for (i = 3; i <= 98; i++)
-	{
-		c = a + b;
-		printf("%d, ", c);
-		a = b;
-		b = c;
-	}
-	return (0);
+    c = a + b;
+    printf("%d\n", c);
+
+    return 0;
 }
