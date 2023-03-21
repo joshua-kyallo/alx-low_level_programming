@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 /**
  * main - this is the main function
  *
@@ -14,7 +13,7 @@ int main(void)
 	int c, i;
 
 	printf("%d, %d, ", a, b);
-	
+
 	for (i = 3; i <= 98; i++)
 	{
 		c = a + b;
