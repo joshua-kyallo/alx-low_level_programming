@@ -1,50 +1,26 @@
 #include <stdio.h>
 
+
 /**
- * main - this is the main fuction
+ * main - this is the main function
  *
  * Return: 0 when successfull
  */
 
 int main(void)
 {
-	int count;
-	unsigned long sum;
-	unsigned long fib1 = 0;
-	unsigned long fib2 = 1;
-	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
-	unsigned long half1, half2;
+	int a = 1;
+	int b = 1;
+	int c, i;
 
-	for (count = 0; count < 92; count++)
-	{
-	sum = fib1 + fib2;
-	printf("%lu, ", sum);
-	fib1 = fib2;
-	fib2 = sum;
-	}
+	printf("%d, %d, ", a, b);
 	
-	fib1_half1 = fib1 / 10000000;
-	fib2_half1 = fib2 / 10000000;
-	fib1_half2 = fib1 % 10000000;
-	fib2_half2 = fib2 % 10000000;
-
-	for (count = 93; count < 99; count++)
+	for (i = 3; i <= 98; i++)
 	{
-	half1 = fib1_half1 + fib2_half1;
-	half2 = fib1_half2 + fib2_half2;
-	if (fib1_half2 + fib2_half2 > 9999999999)
-	{
-	half1 += 1;
-	half2 %= 10000000000;
+		c = a + b;
+		printf("%d, ", c);
+		a = b;
+		b = c;
 	}
-	printf("%lu%lu", half1, half2);
-	if (count != 98)
-	printf(", ");
-	fib1_half1 = fib2_half2;
-	fib1_half2 = fib2_half2;
-	fib2_half1 = half1;
-	fib2_half2 = half2;
-	}
-	printf("\n");
 	return (0);
 }
