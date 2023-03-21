@@ -7,17 +7,16 @@
 
 int main(void)
 {
-	int a = 1, b = 2, i;
-
-	printf("%d, %d, ", a, b);
+	int a = 1;
+	int b = 2;
+	int i, c;
 
 	for (i = 3; i <= 98; i++)
 	{
-		int c = a + b;
-
+		c = a + b;
 		printf("%d", c);
-
-	        if (i != 98)
+		
+		if (i != 98)
 		{
 			printf(", ");
 		}
@@ -26,7 +25,6 @@ int main(void)
 		b = c;
 	}
 
-	printf("\n");
-
+	printf('\n');
 	return (0);
 }
