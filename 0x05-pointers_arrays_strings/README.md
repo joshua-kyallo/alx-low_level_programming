@@ -1,1 +1,1 @@
-this is the REadme file
+This is a folder for pointers, arrays and strings

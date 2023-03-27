@@ -1,16 +1,18 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _puts - test function
+ * puts2 - test function
  * @str: string to print
  * Return: void
  */
 
-void _puts(char *str)
+void puts2(char *str)
 {
 	int i;
+	int len = strlen(str);
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; i < len; i += 2)
 	{
 		_putchar(str[i]);
 	}

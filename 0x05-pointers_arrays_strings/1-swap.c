@@ -2,17 +2,16 @@
 
 /**
  * swap_int - test function
- * swaps the value of two integers
- * @a: value 1
- * @b: value 2
- * Return: 0
+ * @a: first value
+ * @b: second value
+ * Return: void
  */
 
 void swap_int(int *a, int *b)
 {
-	int c;
+	int temp;
 
-	c = *a;
+	temp = *a;
 	*a = *b;
-	*b = c;
+	*b = temp;
 }

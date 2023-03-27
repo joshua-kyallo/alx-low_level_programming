@@ -1,19 +1,20 @@
 #include "main.h"
 
 /**
- * _strlen - retuerns the string length
- * @s: string whose length to be printed
- * Return: length of the spring
+ * _strlen - test function
+ * @s: string to find length
+ * Return: length of string
  */
 
 int _strlen(char *s)
 {
-	int i;
-	int count = 0;
+	int len = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s != '\0')
 	{
-		count++;
+		len++;
+		s++;
 	}
-	return (count);
-}	
+
+	return (len);
+}
